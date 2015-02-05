@@ -31,6 +31,7 @@ function actions() {
     });
 }
 function afterLoaded() {
+    $('.videoTape .container img').addClass('animated fadeInDown');
 }
 
 

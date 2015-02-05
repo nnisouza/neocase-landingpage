@@ -160,18 +160,15 @@ h2{
 }
 .videoTape .container{
     padding: 0;
+    max-width: 558px;
+    overflow: hidden;
 }
 .videoTape .container img{
-    width: 100%;
-    height: auto;
-}
-.videoTape .container #videoHolder{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+    width: auto;
+    height: 513px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
 }
 .content{
     padding-top: 50px;
@@ -228,23 +225,24 @@ h2{
 .content .container .half.right .slider .controls{
     position: absolute;
     bottom: -20px;
-    left: 0;
+    right: 10px;
     padding: 0;
 }
 .content .container .half.right .slider .controls li{
     font-family: 'pn'; 
+    font-size: 12px;
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
     border: 1px solid #05afef;
     border-radius: 50%;
-    line-height: 24px;
+    line-height: 21px;
     text-align: center;
     color: #05afef;
     list-style: none;
     display: inline-block;
-    margin: 0 7px;
-    font-weight: 600;
+    margin: 0 2px;
+    font-weight: 700;
     box-sizing: border-box;
 }
 .content .container .half.right .slider .controls li.current{
