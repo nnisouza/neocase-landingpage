@@ -131,8 +131,8 @@ body{
 }
 .header h1#logo{
     background: url('../img/logo.png') no-repeat;
-    width: 101px;
-    height: 38px;
+    width: 88px;
+    height: 50px;
     display: block;
     margin: 0;
     padding: 0;
@@ -149,7 +149,7 @@ h2{
     font-weight: 700;
     margin: 0;
     line-height: 53px;
-    padding-top: 53px;
+    padding-top: 60px;
     padding-bottom: 10px;
 }
 .videoTape{
@@ -322,13 +322,13 @@ h2{
     padding: 15px 20px;
     box-sizing: border-box;
 }
-.formArea .form-button button{
+.formArea button#submit{
     font-family: 'pn';
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    width: 100%;
-    height: 44px;
+    width: 337px;
+    height: 48px;
     color: #fff;
     background: #ef0022;
     border: 1px solid #b7b7b7;
@@ -353,7 +353,8 @@ h2{
     .formArea form{
         width: 100%;
     }
-    .formArea .form-group{
+    .formArea .form-group,
+    .formArea .form-group.fright{
         width: 100%;
         margin: 0;
         float: none;
@@ -368,6 +369,9 @@ h2{
         width: 100%;
         padding-left: 40px;
         height: 48px;
+    }
+    .formArea .form-group button#submit{
+        width: 100%;
     }
     
     .content .container .half{
@@ -386,9 +390,13 @@ h2{
         line-height: 35px;
     }
     .content .container .half.right .slider .controls{
-        position: static;
-        margin: 20px auto;
-        width: 128px;
+        right: 8%;
+    }
+}
+@media screen and (max-width: 558px) {
+    .videoTape .container img{
+        width: 100%;
+        height: auto;
     }
 }
 
